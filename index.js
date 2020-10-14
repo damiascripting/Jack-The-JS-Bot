@@ -23,7 +23,7 @@ client.on('message', msg => {
   } else if (msg.content == 'chill') {
     msg.channel.send("slurp")
   } else if (msg.content == '/help') {
-    msg.channel.send("Commands:\n*slurp*-Returns chill\n*chill*-Returns slurp")
+    msg.channel.send("Commands:\n*slurp*-Returns chill\n*chill*-Returns slurp\n*/sing souja boi\n*/panic\n*!about")
   }
   if (msg.content == '/sing soulja boi') {
     msg.channel.send("CRANK DAT SOULJA BOI") //
