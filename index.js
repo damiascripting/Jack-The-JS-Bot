@@ -4,7 +4,7 @@ const port = 3000;
 const connection = require('connection')
 const ytdl = require('ytdl-core');
 
-app.get('/', (req, res) => res.send('<h1>Servers Are <i>Online!</i></h1>'));
+app.get('/', (req, res) => res.send('<h1>Servers Are <i>Online!</i></h1><p>Jack Stats: Alive With Uptime Robot, Being A Cool Robot.</p>'));
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
 
@@ -23,7 +23,7 @@ client.on('message', msg => {
   } else if (msg.content == 'j/chill') {
     msg.channel.send("slurp")
   } else if (msg.content == 'j/help') {
-    msg.channel.send("Commands:\n*j/slurp*-Returns chill\n*j/chill*-Returns slurp\n*j/sing souja boi\n*j/about\n*j/support\n*lol\n*j/random")
+    msg.channel.send("Commands:\n*j/slurp*-Returns chill\n*j/chill*-Returns slurp\n*j/sing souja boi\n*j/about\n*j/support\n*lol")
   }
   if (msg.content == 'j/sing soulja boi') {
     msg.channel.send("CRANK DAT SOULJA BOI")
@@ -38,9 +38,6 @@ client.on('message', msg => {
   }
   if (msg.content == 'j/support') {
     msg.channel.send("discord.gg/ncqusx5")
-  } else if (msg.content == 'j/random') {
-    msg.reab
   }
 });
-
 client.login(process.env.DISCORD_TOKEN);
