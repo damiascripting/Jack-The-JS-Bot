@@ -23,22 +23,24 @@ client.on('message', msg => {
   } else if (msg.content == 'j/chill') {
     msg.channel.send("slurp")
   } else if (msg.content == 'j/help') {
-    msg.channel.send("Commands:\n*j/slurp*-Returns chill\n*j/chill*-Returns slurp\n*j/sing souja boi\n*j/about\n*j/support")
+    msg.channel.send("Commands:\n*j/slurp*-Returns chill\n*j/chill*-Returns slurp\n*j/sing souja boi\n*j/about\n*j/support\n*lol\n*j/random")
   }
   if (msg.content == 'j/sing soulja boi') {
     msg.channel.send("CRANK DAT SOULJA BOI")
   } else if (msg.content === '/panic') {
   } else if (msg.content === '/stop') {
-       msg.channel.send("Thanks For Adding Me To Your Server! :) Type j/help For Commands!") 
+    msg.channel.send("Thanks For Adding Me To Your Server! :) Type j/help For Commands!") 
   }
   if (msg.content == 'j/about') {
     msg.channel.send("**Jack The JS Bot 1.0**\n*Build by Whacko (https://repl.it/@Whacko) and damiascripting (http://repl.it/@damiascripting)*\n*Yeah, we cool. :sunglasses:*")
+  } else if (msg.content == 'lol') {
+    msg.react("😂")
   }
   if (msg.content == 'j/support') {
-    msg.channel.send("discord.gg/AmyWhY")
+    msg.channel.send("discord.gg/ncqusx5")
+  } else if (msg.content == 'j/random') {
+    msg.reab
   }
-
-
 });
 
 client.login(process.env.DISCORD_TOKEN);
